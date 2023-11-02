@@ -129,7 +129,7 @@ function MyApp( ) {
        <div className="">
         <div className="border-b py-2.5 bg-gray-700 fixed w-full z-10">
           <Link href="/" className="flex items-center">
-            <span className="text-white md:text-3xl sm:xl pl-5 self-center text-4xl font-semibold whitespace-nowrap">Movies</span>
+            <span className="text-white md:text-3xl sm:xl pl-5 self-center text-3xl font-semibold whitespace-nowrap">Movies</span>
           </Link>
         </div>
         <div className="pt-20">
