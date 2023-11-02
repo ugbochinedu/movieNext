@@ -11,10 +11,10 @@ interface MovieCardProps {
 const MovieCard: React.FC<MovieCardProps> = (props) => {
   const { poster_path, overview, title, id } = props;
   const apiURL =`https://image.tmdb.org/t/p/original${poster_path}` 
-  // console.log(apiURL)
+  console.log(props)
   return (
     <Link href={`/${id}`}>
-        <div className="mt-8 max-w-sm bg-white mx-auto rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:-translate-y-4 duration-200 hover:animate-pulse cursor-pointer">
+        <div className="mt-2 max-w-sm bg-white mx-auto rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:-translate-y-4 duration-200 hover:animate-pulse cursor-pointer">
           <img
             src={apiURL}
             alt={title}

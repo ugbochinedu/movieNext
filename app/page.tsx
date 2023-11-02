@@ -117,13 +117,28 @@ import { Provider } from "react-redux";
 import {store} from "./components/Store";
 // import { AppProps } from 'next/app';
 import Home from "./components/Home";
+import Link from 'next/link';
 // import Home from "./components/Home";
+
+// container mx-auto py-10 px-4 flex flex-col items-center justify-center"
 
 function MyApp( ) {
   return (
-    <Provider store={store}>
+    <div className="bg-gray-900 h-full">
+      <Provider store={store}>
+       <div className="">
+        <div className="border-b py-2.5 bg-gray-700 fixed w-full z-10">
+          <Link href="/" className="flex items-center">
+            <span className="text-white pl-5 self-center text-4xl font-semibold whitespace-nowrap">Movies</span>
+          </Link>
+        </div>
+        <div className="pt-20">
+          <h1 className="container mx-auto py-2 px-4 flex flex-col items-center justify-center text-4xl font-bold mb-2 text-white">Watch Your Best Movies</h1>
+        </div>
+      </div>
       <Home/>
     </Provider>
+    </div>
   );
 }
 
