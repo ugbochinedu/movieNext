@@ -133,7 +133,7 @@ function MyApp( ) {
           </Link>
         </div>
         <div className="pt-20">
-          <h1 className="container mx-auto py-2 px-4 flex flex-col items-center justify-center text-4xl font-bold mb-2 text-white">Watch Your Best Movies</h1>
+          <h1 className="container md:text-3xl sm:text-xl mx-auto py-2 px-4 flex flex-col items-center justify-center lg:text-4xl font-bold mb-2 text-white">Watch Your Best Movies</h1>
         </div>
       </div>
       <Home/>
