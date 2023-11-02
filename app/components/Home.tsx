@@ -35,7 +35,7 @@ function Home() {
               return <MovieCard key={id} id={id} title={title} overview={overview} poster_path={poster_path} />;
             })
           ) : (
-            <h4>No Movie Found</h4>
+            <h4 className='text-white'>No Movie Found</h4>
           )}
         </div>
       </div>
